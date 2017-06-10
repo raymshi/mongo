@@ -822,6 +822,7 @@ dbg_opt_mapping = {
     ( "off", "off" ) : ( False, False ),
 }
 debugBuild, optBuild = dbg_opt_mapping[(get_option('dbg'), get_option('opt'))]
+debugBuild, optBuild = True, False
 
 if releaseBuild and (debugBuild or not optBuild):
     print("Error: A --release build may not have debugging, and must have optimization")

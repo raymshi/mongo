@@ -1,0 +1,6 @@
+  {
+    nThreads:10,
+    fileSizeMB:500,
+    mmf:true
+  }
+

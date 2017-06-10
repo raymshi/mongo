@@ -1,0 +1,11 @@
+  {
+    nThreads:10,     // number of threads (default 1)
+    fileSizeMB:500,   // test file size (default 1MB)
+    sleepMicros:<n>,  // pause for sleepMicros/nThreads between each operation (default 0)
+    mmf:true,       // if true do i/o's via memory mapped files (default false)
+    r:<bool>,         // do reads (default false)
+    w:<bool>,         // do writes (default false)
+    recSizeKB:<n>,    // size of each write (default 4KB)
+    syncDelay:<n>     // secs between fsyncs, like --syncdelay in mongod. (default 0/never)
+  }
+
